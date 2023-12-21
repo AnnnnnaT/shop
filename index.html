@@ -13,7 +13,13 @@
                 <img src="assets\icons\icon_3.svg" alt="icon-1">
                 <img src="assets\icons\icon_2.svg" alt="icon-2">
             </div>    
-            <img src="assets\icons\icon_1.svg" alt="icon-3">
+            <div class="trio-icon">
+                <picture>
+                    <source media="(min-width: 1440px )" srcset="assets\icons\icon_1.svg">
+                    <source media="(max-width: 767px)" srcset="assets\icons\menu-icon-mobile.svg">
+                </picture>
+                
+            </div>
         </div>
         <div class="intro base-container">    
             <img class="intro-image" src="assets\images\intro-image.svg" alt="intro">    
@@ -34,9 +40,11 @@
             <img class="catalog-pics" src="assets\images\catalog3.svg" alt="">
         </div>
         <div class="catalog-item big-item">
-            <img class="photo-icon big" src="assets\images\LUXIROUS & TRENDY ACCESORIES.svg" alt="">
-            <img class="catalog-pics" src="assets\images\catalog4.svg" alt="">
-        </div>        
+            <picture>
+                <source media="(max-width:767px)" srcset="assets\images\mobile-version.svg"/>    
+                <source  media="(min-width: 1440px)" srcset="assets\images\LUXIROUS & TRENDY ACCESORIES.svg, assets\images\catalog4.svg "/>
+            </picture>
+         </div>        
     </section>
     <section class="featured-items">
         <div class="section-header">
