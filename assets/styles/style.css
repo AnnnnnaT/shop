@@ -98,6 +98,7 @@ font-family: 'Lato', sans-serif;
 
 .big{
     text-align: center;
+    grid-column: span 3;
 }
 
 .photo-icon{
@@ -150,9 +151,7 @@ font-family: 'Lato', sans-serif;
 }
 
 
-.big{
 
-}
 .catalog-pics{
     max-width: 100%; 
     max-height: 100%;
@@ -238,6 +237,87 @@ font-family: 'Lato', sans-serif;
     font-weight: 400;
 }
 
+.footer-1-back{
+    background-color:#222224;
+    max-width: 1140px;
+    height: 341px;
+}
+
+.footer-1{
+    display: flex;
+    gap: 30px;
+    padding-top: 103px;
+    max-width: 1140px;
+    margin-left: 230px;
+    margin-right: 230px;
+}
+
+.footer-1-item{
+    flex-direction: column;
+    align-items: center;
+}
+
+.item-title{
+    padding-top: 19px;
+    padding-bottom: 16px;
+    color: #FBFBFB;
+    font-family: Lato;
+    font-size: 19.96px;
+    font-weight: 400;
+}
+
+.content{
+    text-align: center;
+    font-size: 13.972px;
+    font-weight: 300;
+}
+
+.footer-2-back{
+    background-image: url(assets\images\footer-2-back.svg);
+    height: 448px;
+}
+
+.footer-2{
+    background-image: url(assets\images\footer-2-back.svg);
+    height: 448px;
+    display: flex;
+    gap: 222x;
+    margin-top: 97px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+
+}
+
+.footer-2-item{
+    display: flex;
+    flex-direction: column;
+    
+    gap: 30px;
+}
+
+
+.item-image{
+    width: 96px;
+    height: 96px;
+}
+
+.footer-3-back{
+    background-color: #222224;
+    height: 79px;
+    display: flex;
+    gap: 655px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-3__text{
+    color: #FBFBFB;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+}
+
 @media screen and (max-width: 1439px){  
   
     .header, .catalog, .featured-items {
@@ -251,7 +331,10 @@ font-family: 'Lato', sans-serif;
     }
 
     .intro{
+        max-width: 100%;
+        margin: 0 auto;
         gap: 39px;
+        justify-content: center;
     }
     
     .intro-logo{
@@ -259,8 +342,17 @@ font-family: 'Lato', sans-serif;
         gap: 16px;
         padding-top: 138px;
         padding-right: 34px;
+        max-width: 283px;
     }
-    
+
+    .logo-text-1 {
+        font-size: 44px;
+    }
+
+    .logo-text-2{   
+        font-size: 24px;
+    }
+
     .intro-image{
         max-width: 386px;
         max-height: 368px;
