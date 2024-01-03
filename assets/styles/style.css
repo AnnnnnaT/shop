@@ -296,6 +296,18 @@ font-family: 'Lato', sans-serif;
     gap: 30px;
 }
 
+.footer-2-item__text{
+    color: #222224;
+    text-align: center;
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.cursive{
+    font-style: italic;
+}
+
 
 .item-image{
     width: 96px;
