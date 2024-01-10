@@ -150,8 +150,6 @@ font-family: 'Lato', sans-serif;
     background-color: rgba(33, 22, 22, 0.70);
 }
 
-
-
 .catalog-pics{
     max-width: 100%; 
     max-height: 100%;
@@ -237,98 +235,201 @@ font-family: 'Lato', sans-serif;
     font-weight: 400;
 }
 
-.footer-1-back{
-    background-color:#222224;
+
+/* последние 3 блока */
+
+/* блок с иконками */
+
+.center {
     max-width: 1140px;
-    height: 341px;
+    margin: 0 auto;
+}
+
+.footer-bg-color{
+    background-color:#222224;
 }
 
 .footer-1{
     display: flex;
     gap: 30px;
-    padding-top: 103px;
-    max-width: 1140px;
-    margin-left: 230px;
-    margin-right: 230px;
+    margin-top: 95px;
+    padding-bottom: 103px;
 }
 
-.footer-1-item{
+.footer-1__item{
+    display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.item-title{
-    padding-top: 19px;
-    padding-bottom: 16px;
+    gap: 16px;
     color: #FBFBFB;
     font-family: Lato;
-    font-size: 19.96px;
-    font-weight: 400;
+   
+    .item__icon{
+        width: 40px;
+        height: 40px;
+        margin-bottom: 3px;   
+    }
+    
+    /* добавив 3px к bottom мы увеличили
+    расстояние между icon и title */
+
+    .item__title{
+        font-size: 20px;
+        font-weight: 400;
+    }
+    
+    .item__content{
+        text-align: center;
+        font-size: 14px;
+        font-weight: 300;  
+        opacity: 0.67;
+        padding: 0 30px;
+    }
 }
 
-.content{
-    text-align: center;
-    font-size: 13.972px;
-    font-weight: 300;
+/* блоk с формой */
+
+.footer-2-bg{
+    position: relative;
+    background: url(assets\images\photo_subscribe.svg) no-repeat;
+    background-size: cover;  
 }
 
-.footer-2-back{
-    background-image: url(assets\images\footer-2-back.svg);
-    height: 448px;
-}
-
-.footer-2{
-    background-image: url(assets\images\footer-2-back.svg);
-    height: 448px;
+.footer-2{ 
     display: flex;
-    gap: 222x;
+    justify-content: space-between;
+    align-items: center;
     margin-top: 97px;
-    margin-left: auto;
-    margin-right: auto;
-    position: absolute;
-
+    margin-bottom:126px;
 }
 
-.footer-2-item{
+
+.footer-2__about{
     display: flex;
     flex-direction: column;
-    
+    justify-content: center;
+    align-items: center;
     gap: 30px;
-}
 
-.footer-2-item__text{
-    color: #222224;
-    text-align: center;
-    font-family: Lato;
-    font-size: 20px;
-    font-weight: 400;
+    .about__photo{
+
+    }
+
+    .about__text {
+        height: 99px;
+        width: 360px;     
+        color: #222224;
+        text-align: center;
+        font-family: Lato;
+        font-size: 20px;
+        font-weight: 400;
+    }
 }
 
 .cursive{
     font-style: italic;
 }
 
-
-.item-image{
-    width: 96px;
-    height: 96px;
-}
-
-.footer-3-back{
-    background-color: #222224;
-    height: 79px;
+.footer-2__subscribe {
+    margin-top: 53px; 
+    /* складывается с 97px */
     display: flex;
-    gap: 655px;
-    margin-left: auto;
-    margin-right: auto;
+    flex-direction: column;
+    align-items:center;
+    text-align: center;
+    gap: 5px;
+    padding: 0 104px;
+
+    .form-title {
+        font-size: 24px;
+        font-weight: 700;  
+        color: #222224;     
+        font-family: Lato;
+        line-height: 167.2%; 
+    }
+
+    .h2{
+        font-size: 18px;
+        font-weight: 400;    
+    }
 }
 
-.footer-3__text{
-    color: #FBFBFB;
-    font-family: Lato;
-    font-size: 16px;
+.btn-layout {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    height: 49px;
+    display: flex;
+    font-size: 14px;
     font-weight: 400;
+    font-family: Lato;
+
+    .input_email {
+        border: none;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+        padding-left: 22px;
+        color: #222224;
+        background-color: #E1E1E1;
+    }
+
+    .btn-subscribe {
+        border: none;
+        width: 100px;
+        height: 100%;
+        background-color:#F16D7F;
+        color: #FFFFFF;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
 }
+
+/* footer */
+
+
+.footer-3 {
+    display:  flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: auto;
+    padding-right: auto;
+
+    .footer-3__text {
+        color: #FBFBFB;
+        font-family: Lato;
+        font-size: 16px;
+        font-weight: 400;
+        width: 332px;
+    }
+}
+
+
+
+.footer-3__icons{
+    display: flex;
+    gap: 8px;
+    padding: 24px 8px;
+}
+
+
+.icon__item {
+    width: 32px;
+    height: 32px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+
+        background-color: #F16D7F;
+        
+        .icon-logo :hover{
+            fill: #FFFFFF;
+        }         
+    }
+}
+
+
 
 @media screen and (max-width: 1439px){  
   
@@ -392,6 +493,27 @@ font-family: 'Lato', sans-serif;
         grid-column-start: span 3; 
         max-width: 100%;
     }
+
+    .catalog-item{
+        position: relative;
+    }
+    
+    .big{
+        text-align: center;
+        grid-column: span 3;
+    }
+    
+  
+    .icon-text{
+        color: #FFF;
+        text-align: center;
+        font-family: Lato;
+        font-size: 16px;
+        font-weight: 400;
+    }
+  
+
+  
     
     .items{
         display: grid;
@@ -402,6 +524,75 @@ font-family: 'Lato', sans-serif;
         padding-right: 16px;
         padding-bottom: 32px; 
     }    
+
+    .button{
+        margin-bottom: 65px;
+    }
+    .footer-1{
+        display: flex;
+        flex-direction: column;
+        gap: 48px;        
+        margin-top: 48px;
+        padding-bottom: 64px;
+    }
+
+    
+    .footer-1__item{
+        .item__content{
+        width: 300px;
+        }
+    }
+    
+    .footer-2-bg{
+        position: relative;
+        background: url(assets\images\photo_subscribe.svg) no-repeat;
+        background-size: cover;  
+    }
+
+    .footer-2{ 
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+        /* justify-content: space-between; */
+        align-items: center;
+        margin-top: 64px;
+        margin-bottom:140px;
+    }
+
+    .footer-2__subscribe {
+        margin-top: 0px; 
+
+    }
+    
+    
+    .btn-layout {
+        padding-top: 20px;
+        padding-bottom: 30px;
+        height: 49px;
+        display: flex;
+        font-size: 14px;
+        font-weight: 400;
+        font-family: Lato;
+    
+        .input_email {
+            border: none;
+            border-top-left-radius: 50px;
+            border-bottom-left-radius: 50px;
+            padding-left: 22px;
+            color: #222224;
+            background-color: #E1E1E1;
+        }
+    
+        .btn-subscribe {
+            border: none;
+            width: 100px;
+            height: 100%;
+            background-color:#F16D7F;
+            color: #FFFFFF;
+            border-top-right-radius: 50px;
+            border-bottom-right-radius: 50px;
+        }
+    }
 }
 
 @media screen and (max-width:767px) {
@@ -502,5 +693,55 @@ font-family: 'Lato', sans-serif;
         padding-left: 8px;
         padding-right: 8px;
         padding-bottom: 41px;
+    }
+
+    .button{
+        margin-bottom: 96px;
+    }
+   
+    .footer-1{
+        display: flex;
+        gap: 48px;
+        margin-top: 48px;
+        padding-bottom: 81px;
+    }
+
+    .footer-2{ 
+        display: flex;
+        gap: 60px;
+        margin-top: 64px;
+        margin-bottom:110px;
+    }
+
+
+    .footer-2__about{
+        .about__text {
+            height: 73px;
+            width: 343px;     
+            font-size: 18px;
+        }
+    }
+
+    .footer-2__subscribe {
+        margin-top: 0px; 
+        .h2{
+            font-size: 14px;   
+        }
+    }
+
+    .footer-3 {
+        display:  flex;
+        flex-direction: column-reverse;
+        gap: 40px;
+        align-items: center;
+        padding-left: auto;
+        padding-right: auto;
+        margin-top: 42px;
+        margin-bottom: 9px;
+    }
+
+    .footer-3__icons{
+        display: flex;
+        gap: 7px;
     }
 } 
